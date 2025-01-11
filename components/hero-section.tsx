@@ -5,30 +5,30 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Mail, Github, Linkedin, Twitter, ChevronDown } from 'lucide-react'
 
-const useTypewriter = (text: string, speed = 100) => {
-  const [displayText, setDisplayText] = useState("")
+// const useTypewriter = (text: string, speed = 100) => {
+//   const [displayText, setDisplayText] = useState("")
   
-  useEffect(() => {
-    let i = 0
-    const timer = setInterval(() => {
-      if (i < text.length) {
-        setDisplayText((prev) => prev + text.charAt(i))
-        i++
-      } else {
-        clearInterval(timer)
-      }
-    }, speed)
+//   useEffect(() => {
+//     let i = 0
+//     const timer = setInterval(() => {
+//       if (i < text.length) {
+//         setDisplayText((prev) => prev + text.charAt(i))
+//         i++
+//       } else {
+//         clearInterval(timer)
+//       }
+//     }, speed)
 
-    return () => clearInterval(timer)
-  }, [text, speed])
+//     return () => clearInterval(timer)
+//   }, [text, speed])
 
-  return displayText
-}
+//   return displayText
+// }
 
-const TypewriterText = ({ text, speed = 100 }: { text: string; speed?: number }) => {
-  const displayText = useTypewriter(text, speed)
-  return <span>{displayText}</span>
-}
+// const TypewriterText = ({ text, speed = 100 }: { text: string; speed?: number }) => {
+//   const displayText = useTypewriter(text, speed)
+//   return <span>{displayText}</span>
+// }
 
 export default function HeroSection() {
   const [currentRole, setCurrentRole] = useState(0)
@@ -91,7 +91,7 @@ export default function HeroSection() {
                 }}
               />
               <h1 className="relative bg-gradient-to-r from-primary via-primary/80 to-primary/50 bg-clip-text text-6xl font-bold text-transparent sm:text-7xl md:text-8xl">
-                <TypewriterText text="Bittu Singh" speed={150} />
+                Bittu Singh
               </h1>
             </div>
           </motion.div>
