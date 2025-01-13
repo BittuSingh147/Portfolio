@@ -37,6 +37,24 @@ const projects: Project[] = [
       "Spendly uses Google Gemini AI to automatically scan and update your financial records. The app ensures real-time tracking of both personal and business finances with modern technologies like Next.js and Supabase.",
   },
   {
+    title: "Airline Ticket Booking System",
+    description:
+      "A robust backend system for booking flight tickets, including flight search, booking creation, payment processing, and email notifications.",
+    image: "/booking.jpg",
+    link: "https://your-live-link.com", // Replace with your actual deployed URL if you have one
+    github: "https://github.com/BittuSingh147/AirlineTicketBooking.git", // Replace with your GitHub repo link
+    tags: [
+      "Backend",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Stripe",
+      "Email Notifications",
+    ],
+    details:
+      "This backend system allows users to search for available flights, create bookings, and process payments using Stripe. It also sends email notifications upon successful bookings or cancellations.",
+  },
+  {
     title: "DevScripter",
     description:
       "A seamless and interactive code editor with support for multiple languages and real-time execution.",
@@ -150,7 +168,9 @@ export function ProjectsSection() {
                                 sizes="(max-width: 768px) 100vw, 80vw"
                               />
                             </div>
-                            <p className="text-muted-foreground">{currentProject.details}</p>
+                            <p className="text-muted-foreground">
+                              {currentProject.details}
+                            </p>
                           </div>
                         </DialogHeader>
                       </DialogContent>
@@ -160,7 +180,9 @@ export function ProjectsSection() {
 
                 <div className="flex flex-col justify-center space-y-6">
                   <h3 className="text-3xl font-bold">{currentProject.title}</h3>
-                  <p className="text-lg text-muted-foreground">{currentProject.description}</p>
+                  <p className="text-lg text-muted-foreground">
+                    {currentProject.description}
+                  </p>
                   <div className="flex flex-wrap gap-2">
                     {currentProject.tags.map((tag) => (
                       <Badge key={tag} variant="secondary">

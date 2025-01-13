@@ -89,7 +89,7 @@ export function ResumeSection() {
           <div className="w-full sm:w-auto flex flex-col sm:flex-row gap-3">
             <Button asChild variant="default" className="w-full sm:w-auto gap-2">
               <a
-                href="https://drive.google.com/file/d/1zSXW_W-Ga1QyfH86xOcVEbHyS6gae9bC/view?usp=drive_link"
+                href="https://drive.google.com/file/d/17Rnqiuyx3GwjdB9XrLneIeM-zaugypT3/view?usp=drivesdk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center"
